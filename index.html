@@ -5,16 +5,34 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Le mucche</title>
   <style>
-    body { font-family: Arial, Helvetica, sans-serif; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; background:#87CEEB; }
-    .card { text-align:center; padding:2rem; border-radius:12px; background:white; box-shadow:0 4px 12px rgba(0,0,0,0.08); }
+    body { font-family: Arial, Helvetica, sans-serif; display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#87CEEB; }
+    .card { text-align:center; padding:2rem; border-radius:12px; background:white; box-shadow:0 4px 12px rgba(0,0,0,0.08); max-width:1000px; width:90%; }
     h1 { margin:0 0 0.5rem 0; }
     p { margin:0; font-size:1.25rem; }
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; margin-top:1.25rem; }
+    figure { margin:0; background:#fbfbff; padding:0.5rem; border-radius:8px; }
+    img { width:100%; height:auto; display:block; border-radius:6px; }
+    figcaption { font-size:0.95rem; margin-top:0.5rem; color:#333; }
   </style>
 </head>
 <body>
   <div class="card">
     <h1>Le mucche</h1>
     <p>Le mucche sono pelose.</p>
+    <section class="gallery">
+      <figure>
+        <img src="https://source.unsplash.com/600x400/?cow" alt="Mucca al pascolo">
+        <figcaption><strong>Mucca al pascolo</strong> — animale erbivoro che bruca erba e pascola in gruppi.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://source.unsplash.com/600x400/?calf" alt="Vitello vicino alla madre">
+        <figcaption><strong>Vitello e madre</strong> — rapporto madre-vitello importante per sviluppo e socialità.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://source.unsplash.com/600x400/?cow,grazing" alt="Mucca che bruca">
+        <figcaption><strong>Comportamento di brucamento</strong> — le mucche passano molte ore a ruminare e masticare il cibo.</figcaption>
+      </figure>
+    </section>
   </div>
 </body>
 </html>
